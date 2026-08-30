@@ -877,3 +877,119 @@ footer .copyright {
     }
 
   }
+/* ========================================
+   TUTORIAL PAGE
+======================================== */
+
+.tutorial-page {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 160px;
+}
+
+
+.tutorial-page .section-header {
+    max-width: 750px;
+}
+
+
+.tutorial-page h1 {
+    font-size: clamp(45px, 7vw, 85px);
+    line-height: 0.95;
+    letter-spacing: -4px;
+}
+
+
+/* LESSON CARD */
+
+.lesson-card {
+    position: relative;
+
+    padding: 35px;
+
+    margin-bottom: 15px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.08),
+            rgba(255,255,255,0.025)
+        );
+
+    border:
+        1px solid rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(25px);
+
+    transition: 0.35s;
+}
+
+
+.lesson-card:hover {
+    transform: translateY(-5px);
+
+    border-color:
+        rgba(255,255,255,0.22);
+}
+
+
+.lesson-number {
+    color: #555;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+}
+
+
+.lesson-card h2 {
+    margin-top: 15px;
+
+    font-size: 28px;
+}
+
+
+.lesson-card p {
+    margin-top: 10px;
+
+    max-width: 700px;
+
+    color: #888;
+}
+
+
+.back-button {
+    display: inline-block;
+
+    margin-top: 25px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .tutorial-page {
+        padding-top: 130px;
+    }
+
+
+    .tutorial-page h1 {
+        font-size: 52px;
+    }
+
+
+    .lesson-card {
+        padding: 25px;
+
+        border-radius: 25px;
+    }
+
+
+    .lesson-card h2 {
+        font-size: 23px;
+    }
+
+}
